@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu Selection Form</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <h1>CAFE MILLANO</h1>
+
+    <h2> Cafe Menu Selection</h2>
+
+    <div class="form-section">
+        <label for="dishes">Select Major Dishes:</label><br>
+        <select id="dishes" multiple>
+            <option value="Pizza|10">Pizza - $10</option>
+            <option value="Pasta|8">Pasta - $8</option>
+            <option value="Burger|7">Burger - $7</option>
+            <option value="Steak|15">Steak - $15</option>
+        </select>
+    </div>
+
+    <div class="form-section">
+        <label for="starters">Select Starters:</label><br>
+        <select id="starters" multiple>
+            <option value="Soup|5">Soup - $5</option>
+            <option value="Salad|6">Salad - $6</option>
+            <option value="Fries|4">Fries - $4</option>
+            <option value="Nachos|7">Nachos - $7</option>
+        </select>
+    </div>
+
+    <div class="form-section">
+        <label for="drinks">Select Soft Drinks:</label><br>
+        <select id="drinks">
+            <option value="Coke|3">Coke - $3</option>
+            <option value="Sprite|3">Sprite - $3</option>
+            <option value="Lemonade|4">Lemonade - $4</option>
+        </select>
+    </div>
+
+    <div class="form-section">
+        <button onclick="calculateTotal()">Total Cost</button>
+        <button onclick="clearTextArea()">Clear</button>
+    </div>
+
+    <textarea id="resultArea" placeholder="Selected items and their costs will be displayed here..."></textarea>
+<script src="script.js"></script>
+</body>
+</html>
